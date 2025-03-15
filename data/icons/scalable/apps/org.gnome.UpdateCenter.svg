@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linearGradient1124" x1="14.174" x2="115.438" y1="63.978" y2="63.978" gradientTransform="translate(0)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1c71d8" offset="0"/>
+      <stop stop-color="#62a0ea" offset="1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#linearGradient1124)" style="paint-order:stroke fill markers"/>
+  <path transform="scale(.26458)" d="m240.27 197.45a187.48 187.48 0 0 1-144.25 67.904 187.48 187.48 0 0 1-56.131-8.6465 226.77 226.77 0 0 0 170.35 77.32 226.77 226.77 0 0 0 29.441-1.9355l0.5957-134.64z" fill="#1a5fb4" style="paint-order:stroke fill markers"/>
+  <g transform="matrix(3.2439 0 0 3.2439 -1.4634 -1.4634)" fill="#ffffff">
+    <path d="m20 16a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="none" opacity=".25" stroke="#ffffff" stroke-width="2.0001"/>
+    <path d="m10 4.5v11.5"/>
+    <path d="m17.956 16h-7.956"/>
+    <path d="m15.784 10.992-5.784 5.008"/>
+    <path d="m15.784 21.008-5.784-5.008"/>
+  </g>
+</svg>

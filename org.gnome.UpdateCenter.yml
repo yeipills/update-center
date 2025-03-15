@@ -1,0 +1,40 @@
+app-id: org.gnome.UpdateCenter
+runtime: org.gnome.Platform
+runtime-version: '45'
+sdk: org.gnome.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: gnome-update-center
+finish-args:
+  - --share=network
+  - --system-talk-name=org.freedesktop.PackageKit
+  - --system-talk-name=org.freedesktop.fwupd
+  - --filesystem=host:ro
+  - --talk-name=org.gtk.vfs
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.Notifications
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    RUSTFLAGS: "--remap-path-prefix =../"
+    CARGO_HOME: /run/build/gnome-update-center/cargo
+modules:
+  - name: gnome-update-center
+    buildsystem: meson
+    config-opts:
+      - -Dprofile=release
+    sources:
+      - type: dir
+        path: .
+        
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/pkgconfig
+  - /man
+  - /share/man
+  - /share/doc
+  - /doc
+  - /share/gtk-doc
+  - '*.a'
+  - '*.la'

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.UpdateCenter</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Update Center</name>
+  <summary>Manage all system updates in one place</summary>
+  <description>
+    <p>
+      GNOME Update Center provides a unified interface for managing all kinds of system updates.
+      It combines software updates, firmware updates, driver installation, and repository management
+      in a user-friendly interface.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Software updates through PackageKit</li>
+      <li>Firmware updates via fwupd</li>
+      <li>Hardware driver detection and installation</li>
+      <li>Repository management</li>
+      <li>Update scheduling and policy configuration</li>
+    </ul>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://example.com/screenshots/update-center-software.png</image>
+      <caption>Software updates view</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://example.com/screenshots/update-center-firmware.png</image>
+      <caption>Firmware updates view</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://example.com/screenshots/update-center-drivers.png</image>
+      <caption>Hardware drivers view</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://gitlab.gnome.org/gnome/gnome-update-center</url>
+  <url type="bugtracker">https://gitlab.gnome.org/gnome/gnome-update-center/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="translate">https://l10n.gnome.org/module/gnome-update-center/</url>
+  <update_contact>gnome-update-center-list@gnome.org</update_contact>
+  <developer_name>The GNOME Project</developer_name>
+  <kudos>
+    <kudo>ModernToolkit</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>Notifications</kudo>
+  </kudos>
+  <requires>
+    <display_length compare="ge">small</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2023-06-15">
+      <description>
+        <p>Initial preview release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

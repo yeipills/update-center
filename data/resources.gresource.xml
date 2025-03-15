@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/UpdateCenter">
+    <file>style.css</file>
+    <file>ui/main_window.ui</file>
+    <file>ui/update_view.ui</file>
+    <file>ui/firmware_view.ui</file>
+    <file>ui/drivers_view.ui</file>
+    <file>ui/settings_view.ui</file>
+  </gresource>
+  <gresource prefix="/org/gnome/UpdateCenter/icons">
+    <file>scalable/actions/software-update-symbolic.svg</file>
+    <file>scalable/actions/firmware-update-symbolic.svg</file>
+    <file>scalable/actions/drivers-symbolic.svg</file>
+    <file>scalable/actions/settings-symbolic.svg</file>
+  </gresource>
+</gresources>

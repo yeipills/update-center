@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="SettingsView" parent="GtkBox">
+    <property name="orientation">vertical</property>
+    <property name="spacing">12</property>
+    <property name="margin-top">24</property>
+    <property name="margin-bottom">24</property>
+    <property name="margin-start">24</property>
+    <property name="margin-end">24</property>
+    <child>
+      <object class="AdwPreferencesPage">
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title" translatable="yes">Configuración de actualizaciones</property>
+            <property name="description" translatable="yes">Configure cómo el sistema comprueba e instala actualizaciones</property>
+            <child>
+              <object class="AdwSwitchRow" id="auto_check_switch">
+                <property name="title" translatable="yes">Comprobar actualizaciones automáticamente</property>
+                <property name="subtitle" translatable="yes">Buscar nuevas actualizaciones en segundo plano</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="auto_download_switch">
+                <property name="title" translatable="yes">Descargar actualizaciones automáticamente</property>
+                <property name="subtitle" translatable="yes">Descargar actualizaciones cuando estén disponibles</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwSwitchRow" id="security_only_switch">
+                <property name="title" translatable="yes">Priorizar actualizaciones de seguridad</property>
+                <property name="subtitle" translatable="yes">Notificar inmediatamente cuando haya correcciones de seguridad</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwPreferencesGroup">
+            <property name="title" translatable="yes">Orígenes de software</property>
+            <property name="description" translatable="yes">Repositorios habilitados para actualizaciones e instalación de software</property>
+            <child>
+              <object class="GtkListBox" id="repositories_list">
+                <property name="selection-mode">none</property>
+                <style>
+                  <class name="boxed-list"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

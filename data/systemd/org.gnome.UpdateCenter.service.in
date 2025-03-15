@@ -1,0 +1,11 @@
+[Unit]
+Description=GNOME Update Center Background Service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=@bindir@/gnome-update-center --monitor
+Restart=on-failure
+
+[Install]
+WantedBy=gnome-session.target

@@ -1,0 +1,22 @@
+.update-card {
+    border-radius: 12px;
+    border: 1px solid @borders;
+    padding: 12px;
+    margin: 6px;
+}
+
+.security-update {
+    color: @accent_color;
+}
+
+.success {
+    color: @success_color;
+}
+
+.warning {
+    color: @warning_color;
+}
+
+.error {
+    color: @error_color;
+}
